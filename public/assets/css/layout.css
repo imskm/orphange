@@ -1,0 +1,304 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+	font-family: "Roboto regular";
+}
+header {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    padding: 0.7em;
+    box-sizing: border-box;
+}
+
+.div-center { margin: 0 auto !important;}
+.blk-elm { display: block !important;}
+.inblk-elm { display: inline-block !important;}
+.main {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-bg {
+    background-image: url("../img/bank-bg.jpg");
+}
+
+.main-bg-alternate {
+    background-image: url("../img/bank-bg-alternate.jpg");
+}
+
+.row {
+    display: block;
+    width: 100%;
+}
+
+.row-h-1 { height: 10%; }
+.row-h-2 { height: 20%; }
+.row-h-3 { height: 30%; }
+.row-h-4 { height: 40%; }
+.row-h-5 { height: 50%; }
+.row-h-6 { height: 60%; }
+.row-h-7 { height: 70%; }
+.row-h-8 { height: 80%; }
+.row-h-9 { height: 90%; }
+.row-h-10 { height: 100%; }
+
+.col-w-1, .col-w-2, .col-w-3, .col-w-4, .col-w-5, .col-w-6, .col-w-7, .col-w-8, .col-w-9, .col-w-10, .col-w-11, .col-w-12 {
+	display: block;
+	float: left;
+	min-height: 10px;
+	box-sizing: border-box;
+}
+
+.col-w-1 { width: 8.333333333%; }
+.col-w-2 { width: 16.666666667%; }
+.col-w-3 { width: 25.000000000%; }
+.col-w-4 { width: 33.333333333%; }
+.col-w-5 { width: 41.666666667%; }
+.col-w-6 { width: 50.000000000%; }
+.col-w-7 { width: 58.333333333%; }
+.col-w-8 { width: 66.666666667%; }
+.col-w-9 { width: 75.000000000%; }
+.col-w-10 { width: 83.333333333%; }
+.col-w-11 { width: 91.666666667%; }
+.col-w-12 { width: 100.000000000%; }
+
+.full-section {
+	display: block;
+	padding: 100px 0 80px 0;
+}
+
+.full-section h1 {
+	font-family: "Roboto regular";
+	font-size: 2em;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.full-section .hero-para {
+	margin-bottom: 12px;
+	font-family: "Roboto regular";
+	font-size: 1.3em;
+	width: 70%;
+}
+
+.btn {
+	display: inline-block;
+	border-radius: 4px;
+}
+
+.btn:active {
+	position: relative;
+	left: 1px;
+	top: 1px;
+}
+
+.anim-link {
+	font-size: 1em;
+	display: inline-block;
+	text-decoration: underline !important;
+	color: #B9B9B9;
+}
+
+.anim-link:after {
+	display: inline-block;
+	content: "\203A";
+	margin-left: 8px;
+	text-decoration: none;
+	font-size: 1.25em;
+	font-family: "Roboto regular";
+	font-weight: bold;
+	vertical-align: baseline;
+	position: relative;
+	transition: all 300ms ease-in;
+}
+
+.anim-link:hover:after {
+	left: 5px;
+	color: #555;
+}
+
+
+/**********************************
+ * Dashboard sidebar
+ **********************************/
+.dash-container {
+ padding: 0 4px;
+}
+
+.dash-sidebar {
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.user-info {
+	width: auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.user-info .user-avatar {
+	width: 100px;
+	height: 100px;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+	border-radius: 100%;
+	margin: 0 auto;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 15px;
+}
+
+.user-info h3 {
+	margin-bottom: 6px;
+	text-transform: uppercase;
+	font-family: "Roboto light", Arial;
+	font-size: 13px;
+	color: #222;
+}
+
+.user-info p {
+	margin-bottom: 3px;
+	font-family: "Roboto light", Arial;
+	font-size: 12px;
+	color: #ddd;
+}
+
+.dash-menu ul {
+	list-style: none;
+	padding: 0 5px;
+}
+
+.dash-menu li {
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.dash-menu li a {
+	display: block;
+	padding: 12px 4px 12px 20px;
+	box-sizing: border-box;
+	color: #222;
+	font-size: 15px;
+	transition: all 200ms ease-in;
+}
+
+.dash-menu li:first-child a {
+	padding-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: #000;
+}
+.dash-menu li:first-child {  pointer-events: none; cursor: default; }
+.dash-menu li:hover a { background-color: rgba(0, 0, 0, 0.2); }
+
+.dash-menu li.active { pointer-events: none; cursor: pointer; }
+
+.dash-menu .active {
+	border-left: 4px solid #FF8A37;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.dash-menu .active a { color: #fff; }
+
+.dash-menu li a i {
+	margin-right: 20px;
+}
+
+.dash-sidebar .brand-header,
+.dash-main .dash-header {
+	min-height: 60px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+.dash-sidebar .brand-header {
+	text-align: center;
+}
+.dash-sidebar .brand-header h3 {
+	font-family: "Roboto medium", Arial;
+	font-size: 1.3em;
+	color: #fff;
+	line-height: 60px;
+}
+.dash-main .dash-header {
+	background-color: #FFFFFF;
+}
+.dash-main {
+	background-color: #F0F0F0;
+	margin-left: 16.666666667%;
+	min-height: 600px;
+}
+.dash-body {
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.panel {
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 4px 0;
+	box-sizing: border-box;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.panel .panel-head {
+	padding: 12px;
+	text-align: center;
+	border-radius: 4px 4px 0 0;
+	position: relative;
+}
+
+.panel.panel-default .panel-head { background-color: rgba(200, 200, 200, 0.6); }
+
+.panel .panel-head .panel-title {
+	font-family: "Roboto light", Arial;
+	font-size: 15px;
+	color: #333;
+}
+
+.panel .panel-body {
+	padding: 15px 12px;
+}
+
+.panel .panel-body,
+.panel .panel-body p {
+	font-family: "Roboto light", Arial;
+	font-size: 15px;
+	color: #2a2a2a;
+}
+
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }
+
+.close-popup,
+.close-sticky {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #444;
+}
+
+.overlay {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
